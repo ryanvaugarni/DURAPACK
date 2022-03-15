@@ -45,13 +45,12 @@ header{
     display: block;
     margin: 0 auto;
     text-align: center;
-    max-width: 50rem;
     position: relative;
 }
 header img{
-    display: flex;
     max-width: 10rem;
-    margin-left: 5rem;
+    display: block;
+    transform: translateX(5rem);
 }
 header div ul{
     padding: 0rem;
@@ -60,7 +59,11 @@ header div ul{
     margin: 0 auto;
     grid-gap: 1rem;
     line-height: 5rem;
-    display: grid;
+    display: grid; 
+    transform: translateY(4rem);
+}
+ul img{
+    transform: translateY(-3rem);
 }
 li a{/* bouton des articles */
     border: 0;
@@ -79,4 +82,13 @@ li a{/* bouton des articles */
 li a:hover{
     background-color: #a2b1a2;
     transition: all 500ms ease-in-out;
+}
+section{
+    text-align: center;
+}
+section h2{
+    margin-top: 10rem;
+}
+section form{
+    margin-top: 2rem;
 }
