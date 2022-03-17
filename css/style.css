@@ -55,12 +55,13 @@ header img{
 header div ul{
     padding: 0rem;
     text-align: center;
-    grid-template-columns: repeat(12 ,1fr);
+    grid-template-columns: repeat(7 ,1fr);
     margin: 0 auto;
     grid-gap: 1rem;
     line-height: 5rem;
     display: grid; 
     transform: translateY(4rem);
+    max-width: 70%;
 }
 ul img{
     transform: translateY(-3rem);
