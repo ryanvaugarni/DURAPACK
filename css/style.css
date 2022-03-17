@@ -63,16 +63,71 @@ header div ul{
     transform: translateY(4rem);
     max-width: 70%;
 }
+.back{
+    background-color: rgb(73, 146, 137);
+    padding: 15rem;
+    margin-top: 2rem;
+    
+}
+button{
+    cursor: pointer;
+    border-radius: 0.5rem;
+    max-width: 13rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+    margin-right: 1rem;
+    border: 0;
+    background: rgb(192, 212, 191);
+    cursor: pointer;
+}
+button:hover{
+    background-color: #9ab19a;
+    transition: all 500ms ease-in-out;
+}
 ul img{
     transform: translateY(-3rem);
 }
+hr{ /* barre d'espace entre les articles */
+    display: block;
+    max-width: 90rem;
+    margin-top:3rem;
+}
+main figure {
+    max-width: 70rem;
+    height: 29rem;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;/* espacement entre les grids */
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+main figure img{
+    display: block;
+    width: 80%;
+    height: 25rem;
+    clip-path: circle(70%);
+}
+main figure figcaption,.app1 figcaption,.app2 figcaption,.app3 figcaption{
+    margin-right: 1rem;
+    padding: 0.5rem;
+    font-style: italic;
+    line-height: 2.3rem;
+}
+main figure figcaption p{
+    width: 30rem; /* à modifier selon les besoins */
+    overflow: hidden
+}
+.image2{
+    order: 2;
+}
+
 li a{/* bouton des articles */
     border: 0;
     background: rgb(192, 212, 191);
     cursor: pointer;
     border-radius: 1rem;
     transition: all 400ms ease-in-out;
-    color: #f8f1f1;
+    color: #ffffff;
     max-width: 13rem;
     line-height: 4rem;
     padding: 0 1.2rem;
@@ -88,8 +143,60 @@ section{
     text-align: center;
 }
 section h2{
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 section form{
     margin-top: 2rem;
+}
+/* pied de page */
+footer{
+    line-height: 5rem;
+    max-width: 100%;
+    margin:1rem auto;
+    border: solid .1rem #ccc;
+    padding: 1rem;
+    background-color: rgb(192,212,191);
+}
+/* bouton des articles pied de page */
+summary{
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    margin-right: -1rem;
+}
+summary::before{
+    display: inline-block;
+    content:"\203A";
+    margin-right: .5rem;
+    transform: rotate(0deg);
+    vertical-align: top;
+}
+.menu1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.art{
+    border: 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: block;
+    transition: all 400ms ease-in-out;
+    color: #252424;
+    line-height: 4rem;
+    margin-top: 4rem;
+    margin: 1 auto;
+    background-color: transparent;
+    width: 12rem;
+}
+.copy{
+    text-align: center;
+}
+.logo1{
+    clip-path: circle(60%);
+    margin-left: 5rem;
+    margin-top: 2rem;
+    z-index: 2;
+    width: 8rem;
+    height: 8rem;
 }
