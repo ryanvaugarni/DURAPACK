@@ -63,22 +63,44 @@ header div ul{
     transform: translateY(4rem);
     max-width: 70%;
 }
+main h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+   
+    transform: translateY(4rem);
+}
 .back{
-    background-color: rgb(73, 146, 137);
-    padding: 20rem;
+    background: url("../asset/back.jpg") no-repeat;
+    padding: 19rem;
+    margin-top: 2rem; 
+}
+section h1:nth-child(1){
+    color: #fff;
+}
+section h2:nth-child(2){
+    color: #fff;
+}
+section:nth-child(2){
+    max-width: 50%;
     margin-top: 2rem;
-    
+    margin: 0 auto;
+    text-align: justify;
+}
+section h2,  h3{
+    text-align: center;
 }
 button{
     cursor: pointer;
     border-radius: 0.5rem;
-    max-width: 13rem;
-    line-height: 3rem;
+    max-width: 20rem;
+    line-height: 4rem;
     padding: 0 2rem;
     margin-right: 1rem;
     border: 0;
     background: rgb(192, 212, 191);
     cursor: pointer;
+    transform: translateY(2rem);
 }
 button:hover{
     background-color: #9ab19a;
@@ -124,24 +146,43 @@ main figure figcaption p{
 .image2{
     order: 2;
 }
-
+.haut{
+    width: 3%;
+    transform: translateY(15rem);
+    background-color: #fff;
+    border-radius: 3rem;
+}
+.haut:hover{
+    transition: all 1s ease-in-out;
+    transform: translateY(12rem);
+    
+}
 li a{/* bouton des articles */
     border: 0;
-    background: rgb(192, 212, 191);
+    
     cursor: pointer;
     border-radius: 1rem;
     transition: all 400ms ease-in-out;
-    color: #ffffff;
-    max-width: 13rem;
+    color: #008080;
+    max-width: 20rem;
     line-height: 4rem;
     padding: 0 1.2rem;
     margin-right: 1rem;
     display: grid;
     margin: 0 auto;
 }
+ul{ 
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+
 li a:hover{
-    background-color: #a2b1a2;
     transition: all 500ms ease-in-out;
+    color: #7fc095;
 }
 section{
     text-align: center;
