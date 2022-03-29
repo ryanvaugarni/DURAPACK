@@ -70,25 +70,37 @@ main h1{
    
     transform: translateY(4rem);
 }
-.back{
+.first-section{
     background: url("../asset/back.jpg") no-repeat;
     padding: 19rem;
     margin-top: 2rem; 
 }
-section h1:nth-child(1){
-    color: #fff;
-}
-section h2:nth-child(2){
-    color: #fff;
-}
-section:nth-child(2){
-    max-width: 50%;
-    margin-top: 2rem;
+.hide_menu li a{/* bouton des articles */
+    border: 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 400ms ease-in-out;
+    color: #008080;
+    max-width: 20rem;
+    line-height: 4rem;
+    padding: 0 1.2rem;
+    margin-right: 1rem;
+    display: grid;
     margin: 0 auto;
-    text-align: justify;
 }
-section h2,  h3{
-    text-align: center;
+.hide_menu li a:hover{
+    transition: all 500ms ease-in-out;
+    color: #7fc095;
+}
+.logo{
+    transform: translateY(-3rem);
+}
+.hide_menumenu ul{ 
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 70%;
 }
 button{
     cursor: pointer;
@@ -106,17 +118,6 @@ button:hover{
     background-color: #9ab19a;
     transition: all 500ms ease-in-out;
 }
-ul img{
-    transform: translateY(-3rem);
-}
-hr{ /* barre d'espace entre les articles */
-    display: block;
-    max-width: 70%;
-    margin: 0 auto;
-    margin-top:3rem;
-    color: rgb(181, 223, 190);
-
-}
 .haut{
     width: 3%;
     transform: translateY(15rem);
@@ -128,34 +129,15 @@ hr{ /* barre d'espace entre les articles */
     transform: translateY(12rem);
     
 }
-li a{/* bouton des articles */
-    border: 0;
-    cursor: pointer;
-    border-radius: 1rem;
-    transition: all 400ms ease-in-out;
-    color: #008080;
-    max-width: 20rem;
-    line-height: 4rem;
-    padding: 0 1.2rem;
-    margin-right: 1rem;
-    display: grid;
-    margin: 0 auto;
-}
-ul{ 
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap: 1rem;
-    margin: 0 auto;
-    max-width: 70%;
-}
-
-
-li a:hover{
-    transition: all 500ms ease-in-out;
-    color: #7fc095;
+h2{
+    color: #659174;
+    font-weight: 700;
 }
 section{
     text-align: center;
+}
+section h1:nth-child(1){
+    color: #fff;
 }
 section h2{
     margin-top: 6rem;
@@ -163,12 +145,36 @@ section h2{
 section form{
     margin-top: 2rem;
 }
-.container {
-    max-width: 75%;
+section h2:nth-child(2){
+    color: #fff;
+}
+section:nth-child(2){
+    max-width: 50%;
+    margin-top: 2rem;
+    margin: 0 auto;
+    text-align: justify;
+}
+section h2,  h3{
+    text-align: center;
+}
+
+hr{ /* barre d'espace entre les articles */
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    color: rgb(155, 202, 165);
+}
+.third-section{
+    max-width: 70%;
     margin: 0 auto;
     column-count: 3;
     text-align: justify;
-    
+}
+.fourth-section{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: justify; 
 }
 /* pied de page */
 footer{
