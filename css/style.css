@@ -31,14 +31,14 @@ a{
 *{
     /* For FF and non-webkit browsers */
     scrollbar-width: thin;
-    scrollbar-color: #222 #333;
+    scrollbar-color: rgb(93, 138, 100) rgb(93, 138, 100);
 }
 *::-webkit-scrollbar {
-    width: .2rem;
+    width: .1rem;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: #222;
-    outline: .1rem solid #333;
+    background-color: rgb(93, 138, 100);
+    outline: .2rem solid rgb(93, 138, 100);
 }
 /* Debut du site  */
 header{
@@ -165,12 +165,21 @@ hr{ /* barre d'espace entre les articles */
     margin-top: 3rem;
     color: rgb(155, 202, 165);
 }
+footer hr{
+    display: block;
+    max-width: 71%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    color: rgb(155, 202, 165);
+}
+/* 3e section */
 .third-section{
     max-width: 70%;
     margin: 0 auto;
     column-count: 3;
     text-align: justify;
 }
+/* 4e section */
 .fourth-section{
     max-width: 50%;
     margin: 0 auto;
@@ -191,18 +200,25 @@ footer{
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
-.art{
+/* footer ul:nth-child(2){
+
+} */
+.footer-section ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10rem;
+}
+.footer-section a li{
     border: 0;
     cursor: pointer;
     display: block;
     color: #252424;
     line-height: 4rem;
     margin-top: 4rem;
-    margin: 1 auto;
+    margin: 0 auto;
     background-color: transparent;
-    width: 12rem;
 }
-.art:hover{
+.footer-section li:hover{
     border-bottom: solid .1rem;
     background-color: transparent;
 }
